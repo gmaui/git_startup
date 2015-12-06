@@ -1,1 +1,3 @@
 # git_startup
+
+#Learning start...
