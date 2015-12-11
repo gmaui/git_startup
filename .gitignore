@@ -2,3 +2,7 @@
 # Warning: file added in this file will be ignore by git.
 
 log
+# libxx.a libxx.o
+*.[oa]
+# xx.~
+*.~
