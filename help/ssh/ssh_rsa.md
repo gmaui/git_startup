@@ -44,3 +44,17 @@
 
    #sucess:
    Hi username! You have successfully authenticated, but GitHub does not provide shell access.
+
+   #failed:
+   gmaui@ubuntu:~/.ssh/github/test_git$ ssh -T git@github.com
+   ssh: connect to host github.com port 22: Connection refused
+   
+   You should add the config below:
+   $ vim .ssh/config
+
+   Host github.com
+   User gmaui@sina.com
+   Hostname ssh.github.com
+   PreferredAuthentications publickey
+   IdentityFile ~/.ssh/id_rsa
+   Port 443
